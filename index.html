@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-        <link type="text/css" rel="stylesheet" href="css/style.css">
-        <link  href="vendor/css/all.css" rel="stylesheet">
-        
-        <title>Pig Game</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="vendor/css/all.css" rel="stylesheet">
 
-        <div class = "alert show hide" id="alertS"> 
-            <span class="fas fa-exclamation-circle"></span>
-            <span class="msg">Please, Choose your level!</span>
-            <span class="close-btn" id = "closes"> 
+    <title>Pig Game</title>
+</head>
+
+<body>
+
+    <div class="alert show hide" id="alertS">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">Please, Choose your level!</span>
+        <span class="close-btn" id="closes">
             <span class="fas fa-times"> </span>
-            </span>
+        </span>
+    </div>
+
+
+
+
+    <div class="wrapper clearfix">
+        <div class="player-0-panel active">
+            <div class="TextInput TextInput--sizeX0">
+                <div class="TextInput--fragment">
+                    <div class="string" id="current"></div>
+                </div>
+            </div>
         </div>
 
 
 
-
-        <div class="wrapper clearfix">          
-            <div class="player-0-panel active">              
-                <div class="TextInput TextInput--sizeX0">
-                    <div class="TextInput--fragment">
-                        <div class = "string" id="current"></div>                       
-                    </div>
-                </div>
-            </div>
-
-            
-            
-            <div class="player-1-panel">
-                <button1 class="master" id="master" >
-                    <span class="btn-sun"><i class="fas fa-sun fa-lg" id="sun" ></i></span>
-                    <span class="btn-moon"><i class="fas fa-moon fa-lg" id="moon" ></i></span></button1><div > 
-                    <input class="inputs" type= "text" placeholder="Lets Go!!" id="salida"  disabled="disabled" >  
-                    <h4 id="message"></h4>
+        <div class="player-1-panel">
+            <button1 class="master" id="master">
+                <span class="btn-sun"><i class="fas fa-sun fa-lg" id="sun"></i></span>
+                <span class="btn-moon"><i class="fas fa-moon fa-lg" id="moon"></i></span>
+            </button1>
+            <div>
+                <input class="inputs" type="text" placeholder="Lets Go!!" id="salida" disabled="disabled">
+                <h4 id="message"></h4>
             </div>
 
             <div class="commet">
                 <h3>How Play</h3>
-                <h4>It's very simple. You just type the provided example text. Everything else is done automatically. However, at any time you can see your detailed statistics in the profile.</h4>
-                <h4>Easy: 15:00   Medium: 10:00   Hard: 5:00</h4>
+                <h4>It's very simple. You just type the provided example text. Everything else is done automatically.
+                    However, at any time you can see your detailed statistics in the profile.</h4>
+                <h4>Easy: 15:00 Medium: 10:00 Hard: 5:00</h4>
             </div>
 
 
-            </div>
-
-            <!--                          BUTOON                                      -->
-            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-            <button class="btn-cro"><i class="ion-android-alarm-clock" id="crono" >   <i id= "minu" > 00:00   </i>   </i>     </button>
-            <button class="btn-check"><i class="ion-android-checkmark-circle" id="check" >0</i></button>    
-            <button class="btn-close"><i class="ion-android-close" id="close" >0</i></button>
-            <button class="btn-play"><i class="ion-ios-game-controller-a-outline" id="play"  >PLAY</i></button>   
-            <button class="btn-easy"><i class="ion-happy-outline" id="easy" ></i>   <i class="test"  id = "Easy"> EASY   </i>         </button>
-            <button class="btn-medium"><i class="ion-android-happy" id="medium" ></i>  <i class="test" id = "Medium"> Medium  </i>  </button>
-            <button class="btn-hard"><i class="ion-android-sad" id="hard" ></i> <i class = "test" id = "Hard"> Hard </i>     </button>  
-            <button class="btn-add"><i class="ion-android-add" id="add" ></i>  </button>
-
-            
         </div>
-        
-        <script src="app.js"></script>
-    </body>
+
+        <!--                          BUTOON                                      -->
+        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+        <button class="btn-cro"><i class="ion-android-alarm-clock" id="crono"> <i id="minu"> 00:00 </i> </i> </button>
+        <button class="btn-check"><i class="ion-android-checkmark-circle" id="check">0</i></button>
+        <button class="btn-close"><i class="ion-android-close" id="close">0</i></button>
+        <button class="btn-play"><i class="ion-ios-game-controller-a-outline" id="play">PLAY</i></button>
+        <button class="btn-easy"><i class="ion-happy-outline" id="easy"></i> <i class="test" id="Easy"> EASY </i>
+        </button>
+        <button class="btn-medium"><i class="ion-android-happy" id="medium"></i> <i class="test" id="Medium"> Medium
+            </i> </button>
+        <button class="btn-hard"><i class="ion-android-sad" id="hard"></i> <i class="test" id="Hard"> Hard </i>
+        </button>
+        <button class="btn-add"><i class="ion-android-add" id="add"></i> </button>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
